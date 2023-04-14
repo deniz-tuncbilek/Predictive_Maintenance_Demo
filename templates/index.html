@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FPS Deployment Tutorial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Sofia+Sans+Condensed&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body style="background: #000000">
+<div class="login">
+    <h1>FPS Deployment Tutorial</h1>
+
+    <form action="/predict" method="post">
+        <div class="label_group">
+                    <label> sensor2
+            <input type="number" step="0.01" name="sensor2" value="641.82"
+                   required="required"></label>
+        </div>
+        <div class="label_group">
+                    <label> sensor3
+            <input type="number" step="0.01" name="sensor3" value="1589.70"
+                   required="required">
+        </label>
+        </div>
+        <div class="label_group">
+                    <label>sensor4
+            <input type="number" step="0.01" name="sensor4" value="1400.60"
+                   required="required"> </label>
+        </div>
+        <div class="label_group">
+                    <label>sensor7
+            <input type="number" step="0.01" name="sensor7" value="554.36"
+                   required="required">
+        </label>
+        </div>
+        <div class="label_group">
+                    <label>sensor8
+            <input type="number" step="0.01" name="sensor8" value="2388.06"
+                   required="required">
+        </label>
+        </div>
+        <div class="label_group">
+                    <label>sensor9
+            <input type="number" step="0.01" name="sensor9" value="9046.19"
+                   required="required">
+        </label>
+        </div>
+        <div class="label_group">
+                    <label>sensor11
+            <input type="number" step="0.01" name="sensor11" value="47.47"
+                   required="required">
+        </label>
+        </div>
+        <div class="label_group">
+                    <label>sensor12
+            <input type="number" step="0.01" name="sensor12" value="521.66"
+                   required="required">
+        </label>
+        </div>
+        <div class="label_group">
+                    <label>sensor13
+            <input type="number" step="0.01" name="sensor13" value="2388.02"
+                   required="required">
+        </label>
+        </div>
+        <div class="label_group">
+                    <label>sensor14
+            <input type="number" step="0.01" name="sensor14" value="8138.62"
+                   required="required">
+        </label>
+        </div>
+        <div class="label_group">
+                    <label>sensor15
+            <input type="number" step="0.01" name="sensor15" value="8.4195"
+                   required="required">
+        </label>
+        </div>
+        <div class="label_group">
+                    <label>sensor17
+            <input type="number" step="0.01" name="sensor17" value="392.00"
+                   required="required">
+        </label>
+        </div>
+        <div class="label_group">
+                    <label>sensor20
+            <input type="number" step="0.01" name="sensor20" value="39.06"
+                   required="required">
+        </label>
+        </div>
+        <div class="label_group">
+                    <label>sensor21
+            <input type="number" step="0.01" name="sensor21" value="23.42"
+                   required="required">
+        </label>
+        </div>
+
+        <button class="button-6" role="button">
+            Predict remaining usable life
+        </button>
+    </form>
+    <br>
+    <p>{{prediction_text}}</p>
+</div>
+</body>
+</html>
